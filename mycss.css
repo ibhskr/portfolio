@@ -8,7 +8,7 @@
 
 main{
     background-color: aqua;
-    margin: 2px;
+    margin: 0px;
 }
 .title{
     height: 400px;
@@ -20,6 +20,7 @@ main{
 }
 .col1{
     margin: auto;
+    color: azure;
     font-family: 'Acme', sans-serif;
 font-family: 'Lobster Two', cursive;
 font-family: 'Poppins', sans-serif;
@@ -37,6 +38,7 @@ font-family: 'Poppins', sans-serif;
     
 }
 .work h2{
+    
     text-align: center;
     font-family: 'Acme', sans-serif;
     font-family: 'Lobster Two', cursive;
@@ -61,6 +63,19 @@ font-family: 'Poppins', sans-serif;
 .work-col1-img img{
     width: 55px;
 }
+/*--------project---------*/
+.project{
+    background-color: orange;
+    padding: 30PX;
+
+}
+.project h2{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 /*----------education-------------*/
 .edu{
@@ -121,6 +136,14 @@ font-family: 'Poppins', sans-serif;
 }
 .contactinfo{
     display: flex;
+}
+/*-------footer-----------*/
+footer{
+    background-color: black;
+}
+footer p{
+    color: white;
+    text-align: center;
 }
 
 @media only screen and (min-width: 200px) and (max-width:767px){
