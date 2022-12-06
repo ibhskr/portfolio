@@ -29,6 +29,23 @@ font-family: 'Poppins', sans-serif;
 .col2 img{
     width: 300px;
     margin-top: 100px;
+    
+}
+#time{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(140, 141, 141);
+}
+#resume{
+    padding: 5px;
+    background-color: transparent;
+    border: 0.55px rgb(247, 242, 242) solid;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#resume a{
+    text-decoration: none;
+    color: black;
 }
 
 /*----------work--------*/
@@ -150,11 +167,22 @@ footer p{
     .title{
         display:grid;
         height:auto;
+        
     }
     .col1{
         margin-top: 20px;
         width: 100%;
         display:flexbox;
+    }
+    .col1 h1, p{
+        margin-left: 10%;    }
+    #time{
+        font-size: 10px;
+        margin-top: 10px;
+        color: rgb(140, 141, 141);
+    }
+    #resume{
+        margin-left: 10%;
     }
     .col2{
         width: 100%;
@@ -164,6 +192,7 @@ footer p{
         width: 50%;
         float: right;
         margin-top: 0px;
+        margin-right: 10%;
 
     }
     /*---------work---------*/
