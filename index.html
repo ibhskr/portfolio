@@ -16,8 +16,11 @@
         <!---------------Titel----------------->
         <div class="title">
             <div class="col1">
+                
                 <h1><span> W</span>elcome</h1>
                 <p>How are you ? hope you doing Well.</p>
+                <p  id="time"></p>
+                <button id="resume" onclick="resume()"><a href="">Get Resume</a></button>
             </div>
             <div class="col2">
                 <img src="mydp.png" alt="">
@@ -125,4 +128,14 @@
 <footer>
     <p>copyright 2022 @ Bhaskar Roy</p>
 </footer>
+<script>
+    function resume(){
+        var cvmail = prompt("Please Enter Your Mail Id.")
+    }
+    var date = new Date();
+    
+    document.getElementById("time").innerText = date;
+        
+    
+</script>
 </html>
