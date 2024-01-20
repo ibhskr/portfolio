@@ -1,0 +1,46 @@
+.navbar {
+  background-color: rgba(0, 0, 255, 0.356);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar_pc ul {
+  list-style: none;
+  display: flex;
+  /* padding: 10px; */
+  /* padding-right: 10%; */
+  width: 500px;
+}
+
+.navbar_pc ul li {
+  /* width: fit-content; */
+  padding: 10px;
+  margin: 10px;
+}
+
+.navbar_sm {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar_pc {
+    display: none;
+  }
+
+  /* .navbar_sm {
+        display: block;
+        left: 100px;
+    } */
+  .navbar_sm {
+    display: block;
+    width: 10%;
+    /* margin-left: 20px; */
+  }
+  .navbar_sm svg{
+    width: 30px;
+  }
+}

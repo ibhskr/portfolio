@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  /* padding for large screen*/
+  --pd-lg-sc: 10%;
+  /*padding use for small screen*/
+  --pd-sm-sc: 5%;
+
+}
+.title-text{
+    font-size: 2rem;
+    text-align: center;
+}
+.content-padding{
+    padding:5% 5% 0;
+}
+/* @media screen and (max-width:600px) {
+    .content-padding{
+        padding:5% 5% 0;
+    }
+}
+@media screen and (min-width:600px) {
+    .content-padding{
+        padding:5% 5% 0;
+    }
+} */
