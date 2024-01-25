@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { BsJustify, BsXLg } from "react-icons/bs";
-import PopNavbar from "./popup_navbar";
 
 function Navbar() {
   const [isNavbarOpen, setNavbarOpen] = useState(false);
+
+  function toggle() {
+    setNavbarOpen(!isNavbarOpen);
+  }
 
   return (
     <>
@@ -21,12 +24,18 @@ function Navbar() {
             <li>Contact me</li>
           </ul>
         </div>
-        <div onClick={() => setNavbarOpen(!isNavbarOpen)} className="navbar_sm">
+        <div onClick={toggle} className="navbar_sm">
           {isNavbarOpen ? <BsXLg /> : <BsJustify />}
         </div>
       </div>
-      <div>
-        {isNavbarOpen && <PopNavbar />}
+      <div className={isNavbarOpen ? "nav-show navbar_sm_menu" : "nav-hide navbar_sm_menu"}>
+        <nav >
+          <a href="#">Home</a>
+          <a href="#">Project</a>
+          <a href="#">Blog</a>
+          <a href="#">About me</a>
+          <a href="#">Contact me</a>
+        </nav>
       </div>
     </>
   );
