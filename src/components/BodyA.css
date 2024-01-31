@@ -9,6 +9,41 @@
     rgba(0, 212, 255, 0.6587885154061625) 100%
   );
 }
+.bodyA-text {
+ font-size: 1rem;
+}
+
+@keyframes cursor {
+  /* to{
+    border-left: 2px solid black;
+  } */
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+  
+}
+@keyframes words {
+  0%,33%{
+    content: "Bhaskar Roy";
+  }
+  34%,67%{
+    content: "a Full Stack Web Developer";
+  }
+  68%,100%{
+    content: "a Tech Enthusiast";
+  }
+  
+}
+
 .profile_pic {
   width: 40%;
   display: flex;

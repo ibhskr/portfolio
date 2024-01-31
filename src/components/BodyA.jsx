@@ -5,7 +5,7 @@ function BodyA() {
   return (
     <div className="bodyA content-padding">
       <div className="bodyA-text">
-        <h2>Hi, This is Bhaskar</h2>
+        Hi, Welcome to my profile..
       </div>
       <div className="profile_pic">
         <img src={pp} alt="" />
