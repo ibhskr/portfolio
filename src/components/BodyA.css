@@ -1,34 +1,42 @@
-.bodyA{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(9,9,121,0) 0%, rgba(0,212,255,0.6587885154061625) 100%);
+.bodyA {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(9, 9, 121, 0) 0%,
+    rgba(0, 212, 255, 0.6587885154061625) 100%
+  );
 }
-.profile_pic{
-    width: 40%;
-    display: flex;
-    justify-content: end;
+.profile_pic {
+  width: 40%;
+  display: flex;
+  justify-content: end;
 }
-.profile_pic img{
-   width: 80%
+.profile_pic img {
+  width: 80%;
 }
-
 
 /* media query for small screen */
-@media screen and (max-width: 600px){
-    .bodyA{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .profile_pic{
-        width: 100%;
-    }
-    .profile_pic img{
-       width: 50%;
-       float: right;
-    }
-    .bodyA-text{
-        padding: 10%;
-    }
+@media screen and (max-width: 600px) {
+  .bodyA {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile_pic {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .profile_pic img {
+    width: 50%;
+    float: right;
+  }
+  .bodyA-text {
+    position: sticky;
+    top:8rem;
+    /* margin-top: 100px; */
+  }
 }

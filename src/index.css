@@ -13,12 +13,17 @@
     font-size: 2rem;
     text-align: center;
 }
+
 /* .content-padding{
     padding:5% 5% 0;
 } */
 @media screen and (max-width:600px) {
     .content-padding{
         padding:1% 1% 0;
+    }
+    
+    .title-text img{
+        width: 200px;
     }
 }
 @media screen and (min-width:600px) {
