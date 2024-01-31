@@ -6,6 +6,7 @@
   min-width: 250px;
   max-width: 350px;
   margin: 2.5rem;
+  height: fit-content;
 }
 
 .project-item h3{

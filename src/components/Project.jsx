@@ -38,7 +38,7 @@ function Project() {
             src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2021/02/10190751/Top-6-Project-Management-Trends-in-2021.png"
             alt=""
           />
-          <h3>My Service Provider</h3>
+          <h3>My Service Provider </h3>
           <p>
             Create a dynamic service provider website using a tech stack
             comprising React for a seamless user interface, Node.js for robust
