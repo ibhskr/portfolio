@@ -25,11 +25,13 @@ function Footer() {
           </li>
           <li>
             <FaPhone />
-            <p>+91 8389997439</p>
+            <a href="tel:+918389997439">+91 8389997439</a>
+            
           </li>
           <li>
             <MdAlternateEmail />
-            <p>bhskr.wb@gmail.com</p>
+            <a href="mailto:bhskr.wb@gmail.com">bhskr.wb@gmail.com</a>
+           
           </li>
         </ul>
       </div>
@@ -38,11 +40,11 @@ function Footer() {
         <ul>
           <li>
             <FaLinkedin />
-            <p>LinkedIn</p>
+            <a href="http://www.linkedin.com/in/ibhskr">LinkedIn</a>
           </li>
           <li>
             <FaGithub />
-            <p>GitHub</p>
+            <a href="https://github.com/ibhskr">Github</a>
           </li>
           <li></li>
         </ul>

@@ -1,15 +1,28 @@
+/* parent section*/
+/*parent item*/
 .project-item {
   box-shadow: 0 0 5px gray;
   border-radius: 1rem;
+  min-width: 250px;
+  max-width: 350px;
+  margin: 2.5rem;
 }
-.project-item h3,
-.project-item p {
+
+.project-item h3{
   padding: 0 2rem;
+  text-decoration: underline 2px solid orangered;
 }
+
+
 .project-item img {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 2rem;
+}
+.project-item p{
+  padding: 0 2rem;
+  height: 150px;
+  overflow-y: auto;
 }
 .project-item button {
   margin: 2rem 0 0 0;
@@ -24,21 +37,21 @@
   font-size: 15px;
 }
 
-@media screen and (min-width: 767px) {
+.project-section {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: orange gray;
+}
+.project-section::-webkit-scrollbar{
+  width: 0;
+}
+/* @media screen and (min-width: 767px) {
   .project-item {
-    width: 20rem;
-    margin: 2.5rem;
+   
   }
 }
+
 @media screen and (max-width: 767px) {
-  .project-section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .project-item {
-    width: 100%;
-    box-shadow: 0 0 5px gray;
-    margin: 2rem;
-  }
-}
+  
+} */
