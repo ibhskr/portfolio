@@ -1,6 +1,6 @@
-import React from "react";
-import "./Errorpage.css";
-function Errorpage() {
+import React from 'react'
+import './PageError.css'
+function PageError() {
   return (
     <div className="ErrorPage">
       <div>
@@ -14,7 +14,7 @@ function Errorpage() {
       <p className="ErrorPage-text2">the page you are looking <span className="notAvailable">it's not available!</span></p>
       
     </div>
-  );
+  )
 }
 
-export default Errorpage;
+export default PageError
