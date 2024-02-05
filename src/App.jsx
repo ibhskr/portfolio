@@ -1,22 +1,25 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "./components/navbar";
-import BodyA from "./components/BodyA";
-import Workdomain from "./components/Workdomain";
-import Project from "./components/Project";
-import Education from "./components/Education";
+import Home from "./Home";
 import Footer from "./components/Footer";
-
+import UnderMaintenance from "./components/UnderMaintenance";
+import ErrorPage from "./components/Errorpage";
+import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
-  
   return (
-    <div>
-      <Navbar />
-      <BodyA/>
-      <Workdomain/>
-      <Project/>
-      <Education/>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project" element={<UnderMaintenance />}/>
+        <Route path="/blog" element={<UnderMaintenance />}/>
+        <Route path="/about" element={<UnderMaintenance />}/>
+        <Route path="/contact" element={<UnderMaintenance />}/>
+        <Route path="*" element ={<ErrorPage/>}/>
+      </Routes>
       <Footer/>
-    </div>
+    </BrowserRouter>
   );
 }
 

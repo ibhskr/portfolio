@@ -17,10 +17,24 @@
 }
 
 .navbar_pc ul li {
-  padding: 10px;
-  margin: 10px;
+ 
+  transition: all 0.3s;
+  
 }
 
+.navbar_pc ul li a{
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+.navbar_pc ul li a:hover{
+  
+  cursor: pointer;
+  border-radius: 1rem;
+ box-shadow: 0px 0px 5px greenyellow;
+
+}
 .navbar_sm {
   display: none;
 }
@@ -35,6 +49,10 @@
   color: white;
   padding: 0.3rem;
   box-shadow: 0 0 5px gainsboro;
+}
+.logo h3 a{
+  color: white;
+  text-decoration: none;
 }
 @media screen and (max-width: 767px) {
   .navbar_pc {

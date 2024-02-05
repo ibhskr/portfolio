@@ -5,7 +5,7 @@ import underlineImage from "../assets/yellow-vector.svg";
 
 function Project() {
   return (
-    <div className="project content-padding">
+    <div className="project content-padding" id="project">
       <div className="project-section-title title-text">
         <p>Project</p>
         <img src={underlineImage} alt="" srcSet="" />
