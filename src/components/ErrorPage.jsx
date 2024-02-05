@@ -1,6 +1,6 @@
 import React from "react";
-import "./ErrorPage.css";
-function ErrorPage() {
+import "./Errorpage.css";
+function Errorpage() {
   return (
     <div className="ErrorPage">
       <div>
@@ -17,4 +17,4 @@ function ErrorPage() {
   );
 }
 
-export default ErrorPage;
+export default Errorpage;

@@ -3,7 +3,7 @@ import Navbar from "./components/navbar";
 import Home from "./Home";
 import Footer from "./components/Footer";
 import UnderMaintenance from "./components/UnderMaintenance";
-import ErrorPage from "./components/Errorpage";
+import Errorpage from "./components/Errorpage";
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/blog" element={<UnderMaintenance />}/>
         <Route path="/about" element={<UnderMaintenance />}/>
         <Route path="/contact" element={<UnderMaintenance />}/>
-        <Route path="*" element ={<ErrorPage/>}/>
+        <Route path="*" element ={<Errorpage/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
