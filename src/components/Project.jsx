@@ -1,56 +1,37 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
-import "./Project.css";
+import xClone from "../assets/xClone.png";
+import findMyHotel from "../assets/findMyHotel.png";
 import underlineImage from "../assets/yellow-vector.svg";
-
+import "./Project.css";
 function Project() {
   return (
-    <div className="project content-padding" id="project">
-      <div className="project-section-title title-text">
-        <p>Project</p>
-        <img src={underlineImage} alt="" srcSet="" />
+    <div className="project-section">
+      <div className="title-text">
+      <p>Project</p>
+      <img src={underlineImage} alt="" srcset="" />
       </div>
-      <div className="project-section">
-        {/* 1st element */}
+      <div className="project">
         <div className="project-item">
-          <img
-            src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2021/02/10190751/Top-6-Project-Management-Trends-in-2021.png"
-            alt=""
-          />
-          <h3>DevCom</h3>
+          <img src={xClone} alt="" srcset="" />
           <p>
-            Here, people can post about their projects, ask for help with coding
-            issues, share tips and tricks, and engage in discussions related to
-            software development. Whether you're a seasoned developer or just
-            starting out, this is the perfect place to connect with like-minded
-            individuals and expand your knowledge in the field. Feel free to ask
-            any questions or share your own experiences – we're here to support
-            each other!
+            • Developed a full-stack clone of X (formerly Twitter) using
+            React.js, Node.js, and MongoDB, featuring real-time updates and a
+            user-friendly interface. Implemented backend services and a
+            responsive front end to handle dynamic content and user interactions
+            efficiently.{" "}
           </p>
-          <button>
-            visit <BsArrowRight />
-          </button>
-        </div>
 
-        {/* 2nd element */}
+          <button>Visit</button>
+        </div>
         <div className="project-item">
-          <img
-            src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2021/02/10190751/Top-6-Project-Management-Trends-in-2021.png"
-            alt=""
-          />
-          <h3>My Service Provider </h3>
+          <img src={findMyHotel} alt="" />
           <p>
-            Create a dynamic service provider website using a tech stack
-            comprising React for a seamless user interface, Node.js for robust
-            backend functionality, and MongoDB for efficient data management.
-            Enable users to effortlessly book services online while managing and
-            visualizing comprehensive data through a user-friendly dashboard.
-            Enhance user experience and streamline operations with this
-            powerful, responsive platform.
+            • Developed FindMyHotel, a web application for managing hotel
+            bookings with features to add, delete, and search hotels. Utilized
+            REST API for the backend, styled with Tailwind CSS, and incorporated
+            some MUI components for a polished user interface.
           </p>
-          <button>
-            visit <BsArrowRight />
-          </button>
+          <button>Visit</button>
         </div>
       </div>
     </div>
