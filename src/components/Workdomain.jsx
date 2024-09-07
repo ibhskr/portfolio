@@ -7,6 +7,17 @@ import databaseImg from "../assets/database.png";
 import programingImg from "../assets/coding.png";
 import toolsImg from "../assets/tools.png";
 import background1 from "../assets/background-1.png";
+import htmlImg from "../assets/html.svg";
+import cssImg from "../assets/css.svg";
+import javascript from "../assets/javascript.svg";
+import react from "../assets/react.svg";
+import java from "../assets/java.svg";
+import nodejs from "../assets/node.svg";
+import express from "../assets/express.svg";
+import tailwind from "../assets/tailwind-css.svg";
+
+import git from "../assets/git.svg";
+import github from "../assets/github.svg";
 function Workdomain() {
   return (
     <div className="Workdomain content-padding">
@@ -27,19 +38,10 @@ function Workdomain() {
               srcset=""
             />
             <div className="workdomain-icon">
-              <img
-                src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png"
-                alt="HTML5"
-              />
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png"
-                alt="CSS"
-              />
-              <img src="https://www.svgrepo.com/show/452045/js.svg" alt="JS" />
-              <img
-                src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png"
-                alt="REACT.JS"
-              />
+              <img src={htmlImg} alt="HTML5" />
+              <img src={cssImg} alt="CSS" />
+              <img src={javascript} alt="JS" />
+              <img src={react} alt="REACT.JS" />
             </div>
             <ul>
               <li>HTML</li>
@@ -93,6 +95,7 @@ function Workdomain() {
                 src="https://www.svgrepo.com/show/373845/mongo.svg"
                 alt="MONGODB"
               />
+              <img src={imageHandler.javaImg} alt="" />
             </div>
             <ul>
               <li>MongoDB</li>
@@ -138,18 +141,11 @@ function Workdomain() {
           <img src={toolsImg} className=" center-img" alt="" srcset="" />
           <div className="center">
             <p>Tools</p>
-            <img
-              className="background-img"
-              src={background1}
-              alt=""
-              
-            />
+            <img className="background-img" src={background1} alt="" />
             <div className="workdomain-icon">
-              <img
-                src="https://www.svgrepo.com/show/512317/github-142.svg"
-                alt="Github"
-                
-              />
+              <img src={git} alt="git" />
+              <img src={github} alt="Github" />
+
               <img
                 src="https://www.svgrepo.com/show/354202/postman-icon.svg"
                 alt="postman"
@@ -157,12 +153,10 @@ function Workdomain() {
               <img
                 src="https://www.svgrepo.com/show/374118/tailwind.svg"
                 alt="tailwind"
-                
               />
-              
             </div>
             <ul>
-              <li>Github</li>
+              <li> Git & Github</li>
               <li>Postman</li>
               <li>Tailwind</li>
             </ul>
