@@ -1,15 +1,14 @@
 .ed-item {
   box-shadow: 0px 0px 5px gray;
-  
 }
+
 .ed-item img {
   width: 100px;
 }
-.underline{
-  
+.underline {
   text-decoration: underline 1px solid blue;
   padding-bottom: 1rem;
-  
+
   /* font-weight:bolder; */
   color: rgb(5, 5, 122);
 }
@@ -21,14 +20,14 @@
     padding: 1rem;
     border-radius: 1rem;
     margin: 1rem;
-
   }
- 
+
   .ed-item img {
     width: 80px;
     margin-right: 20px;
   }
 }
+
 /** media queary for big screen */
 @media screen and (min-width: 767px) {
   .educationsection {
@@ -41,18 +40,51 @@
   }
   .ed-item {
     display: flex;
+    
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     margin: 1rem 1rem 0 1rem;
     padding: 0 2rem;
     border-radius: 1.5rem 1.5rem 0 0;
   }
-  /* .ed-item p{
-    padding: 2px;
-  } */
+  .ed-item-1 {
+    background-image: url("../assets/scl-img.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .ed-item-2 {
+    background-image: url("../assets/clg1-img.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .ed-item-3 {
+    background-image: url("../assets/clg2-img.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .ed-text {
+    width: 100%;
+    /* background: black; */
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    border-radius: 1rem 1rem 0 0; /* Optional: rounded corners */
+    padding: 5px; /* Optional: spacing inside */
+    backdrop-filter: blur(2px); /* Apply blur effect to background */
+    -webkit-backdrop-filter: blur(8px); /* For Safari compatibility */
+  }
+  .ed-text h3 {
+    color: indigo;
+  }
+  .ed-text p {
+    color: #333; /* Ensure text is readable */
+  }
+
   .ed-item img {
     margin: 1.5rem 0;
+    display: none;
   }
   .ed-item-1 {
     height: 50%;

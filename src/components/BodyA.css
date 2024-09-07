@@ -8,40 +8,58 @@
     rgba(9, 9, 121, 0) 0%,
     rgba(0, 212, 255, 0.6587885154061625) 100%
   );
+
+  /* bg parttern */
+  /* background-color: #e5e5f7; */
+  /* opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 50px
+    ),
+    repeating-linear-gradient(#444cf755, #444cf7);*/
+
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      rgba(255, 255, 255, 0.2) 70px
+    ),
+    repeating-linear-gradient(transparent, transparent);
 }
+
 .bodyA-text {
- font-size: 1rem;
+  font-size: 1rem;
 }
 
 @keyframes cursor {
   /* to{
     border-left: 2px solid black;
   } */
-  50%{
+  50% {
     border-color: transparent;
   }
 }
 @keyframes typing {
-  
-  from{
+  from {
     width: 0;
   }
-  to{
+  to {
     width: 100%;
   }
-  
 }
 @keyframes words {
-  0%,33%{
+  0%,
+  33% {
     content: "Bhaskar Roy";
   }
-  34%,67%{
+  34%,
+  67% {
     content: "a Full Stack Web Developer";
   }
-  68%,100%{
+  68%,
+  100% {
     content: "a Tech Enthusiast";
   }
-  
 }
 
 .profile_pic {
@@ -56,7 +74,6 @@
 /* media query for small screen */
 @media screen and (max-width: 600px) {
   .bodyA {
-    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,7 +88,7 @@
   }
   .bodyA-text {
     position: relative;
-    top:8rem;
+    top: 8rem;
     /* margin-top: 100px; */
   }
 }

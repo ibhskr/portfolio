@@ -9,69 +9,62 @@ import toolsImg from "../assets/tools.png";
 import background1 from "../assets/background-1.png";
 import htmlImg from "../assets/html.svg";
 import cssImg from "../assets/css.svg";
+
 import javascript from "../assets/javascript.svg";
 import react from "../assets/react.svg";
-import java from "../assets/java.svg";
-import nodejs from "../assets/node.svg";
+import nodejs from "../assets/nodejs.svg";
 import express from "../assets/express.svg";
-import tailwind from "../assets/tailwind-css.svg";
-
+import mongodb from "../assets/mongodb.svg";
 import git from "../assets/git.svg";
 import github from "../assets/github.svg";
+import tailwind from "../assets/tailwind-css.svg";
+import java from "../assets/java.svg";
 function Workdomain() {
   return (
     <div className="Workdomain content-padding">
       <div className="title-text">
         <p>Work Domain</p>
-        <img src={underlineImage} alt="" srcset="" />
+        <img src={underlineImage} alt="underline" />
       </div>
       <div className="workdomain-main">
-        {/*codes for front end */}
-        <div className="workdomain-item ">
-          <img src={frontendImg} className="center-img" alt="" srcset="" />
+        {/* Frontend Section */}
+        <div className="workdomain-item">
+          <img src={frontendImg} className="center-img" alt="frontend" />
           <div className="center">
             <p>Frontend</p>
             <img
               className="background-img"
               src={background1}
-              alt=""
-              srcset=""
+              alt="background"
             />
             <div className="workdomain-icon">
               <img src={htmlImg} alt="HTML5" />
               <img src={cssImg} alt="CSS" />
               <img src={javascript} alt="JS" />
-              <img src={react} alt="REACT.JS" />
+              <img src={react} alt="React" />
             </div>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
-              <li>JS</li>
+              <li>JavaScript</li>
               <li>React.js</li>
             </ul>
           </div>
         </div>
 
-        {/*codes for back end */}
-        <div className="workdomain-item ">
-          <img src={backendImg} className=" center-img" alt="" srcset="" />
+        {/* Backend Section */}
+        <div className="workdomain-item">
+          <img src={backendImg} className="center-img" alt="backend" />
           <div className="center">
             <p>Backend</p>
             <img
               className="background-img"
               src={background1}
-              alt=""
-              srcset=""
+              alt="background"
             />
             <div className="workdomain-icon">
-              <img
-                src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png"
-                alt="NODE.JS"
-              />
-              <img
-                src="https://www.svgrepo.com/show/330398/express.svg"
-                alt="EXPRESS.JS"
-              />
+              <img src={nodejs} alt="Node.js" />
+              <img src={express} alt="Express.js" />
             </div>
             <ul>
               <li>Node.js</li>
@@ -79,84 +72,73 @@ function Workdomain() {
             </ul>
           </div>
         </div>
-        {/*codes for  database */}
-        <div className="workdomain-item ">
-          <img src={databaseImg} className=" center-img" alt="" srcset="" />
+
+        {/* Database Section */}
+        <div className="workdomain-item">
+          <img src={databaseImg} className="center-img" alt="database" />
           <div className="center">
             <p>Database</p>
             <img
               className="background-img"
               src={background1}
-              alt=""
-              srcset=""
+              alt="background"
             />
             <div className="workdomain-icon">
-              <img
-                src="https://www.svgrepo.com/show/373845/mongo.svg"
-                alt="MONGODB"
-              />
-              <img src={imageHandler.javaImg} alt="" />
+              <img src={mongodb} alt="MongoDB" />
             </div>
             <ul>
               <li>MongoDB</li>
             </ul>
           </div>
         </div>
-        {/*codes for  database */}
-        <div className="workdomain-item ">
-          <img src={programingImg} className=" center-img" alt="" srcset="" />
+
+        {/* Programming Language Section */}
+        <div className="workdomain-item">
+          <img src={programingImg} className="center-img" alt="programming" />
           <div className="center">
-            <p>Language</p>
+            <p>Languages</p>
             <img
               className="background-img"
               src={background1}
-              alt=""
-              srcset=""
+              alt="background"
             />
             <div className="workdomain-icon">
-              <img
-                src="https://www.svgrepo.com/show/452234/java.svg"
-                alt="Java"
-              />
-              <img
-                src="https://www.svgrepo.com/show/452045/js.svg"
-                alt="Javascript"
-                srcset=""
-              />
-              <img
+              <img src={java} alt="Core Java" />
+              <img src={javascript} alt="JS" />
+              {/* <img
                 src="https://www.svgrepo.com/show/374146/typescript-official.svg"
-                alt="typescript"
-                srcset=""
-              />
+                alt="TypeScript"
+              /> */}
             </div>
             <ul>
-              <li>Javascript</li>
+              <li>JavaScript</li>
               <li>Java</li>
-              <li>TypeScript</li>
+              {/* <li>TypeScript</li> */}
             </ul>
           </div>
         </div>
-        {/*codes for  database */}
-        <div className="workdomain-item ">
-          <img src={toolsImg} className=" center-img" alt="" srcset="" />
+
+        {/* Tools Section */}
+        <div className="workdomain-item">
+          <img src={toolsImg} className="center-img" alt="tools" />
           <div className="center">
             <p>Tools</p>
-            <img className="background-img" src={background1} alt="" />
+            <img
+              className="background-img"
+              src={background1}
+              alt="background"
+            />
             <div className="workdomain-icon">
-              <img src={git} alt="git" />
-              <img src={github} alt="Github" />
-
+              <img src={git} alt="Git" />
+              <img src={github} alt="GitHub" />
               <img
                 src="https://www.svgrepo.com/show/354202/postman-icon.svg"
-                alt="postman"
+                alt="Postman"
               />
-              <img
-                src="https://www.svgrepo.com/show/374118/tailwind.svg"
-                alt="tailwind"
-              />
+              <img src={tailwind} alt="tailwind" />
             </div>
             <ul>
-              <li> Git & Github</li>
+              <li>Git & GitHub</li>
               <li>Postman</li>
               <li>Tailwind</li>
             </ul>

@@ -11,33 +11,33 @@ function Education() {
       <div className="educationsection ">
         <div className="ed-item ed-item-1">
           <img src="https://www.svgrepo.com/show/402648/school.svg" alt="" />
-          <span>
-            <p className="underline">Baneswar Khabsa High School</p>
+          <div className="ed-text">
+            <h3>Baneswar Khabsa High School</h3>
             <p>12th with PCM</p>
             <p>Academic Year: 2016 - 2018</p>
-          </span>
+          </div>
         </div>
         <div className="ed-item ed-item-2">
           <img
             src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/853250/college-building-clipart-md.png"
             alt=""
           />
-          <span>
-            <p className="underline">Jalpaiguri Polytechnic Institute</p>
+          <div className="ed-text">
+            <h3>Jalpaiguri Polytechnic Institute</h3>
             <p>Diploma in Mechanical Engineering</p>
             <p>Academic Year: 2018 - 2021</p>
-          </span>
+          </div>
         </div>
         <div className="ed-item ed-item-3">
           <img
             src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3518094/college-building-clipart-md.png"
             alt=""
           />
-          <span>
-            <p className="underline">CoochBehar Govt. Engineering College</p>
+          <div className="ed-text">
+            <h3>CoochBehar Govt. Engineering College</h3>
             <p>Computer Science and Engineering</p>
             <p>Academic Year: 2022 - 2025</p>
-          </span>
+          </div>
         </div>
       </div>
     </div>

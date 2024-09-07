@@ -13,27 +13,25 @@
   list-style: none;
   display: flex;
   margin-right: 20px; /* Adjusted margin */
-  
 }
 
 .navbar_pc ul li {
- 
   transition: all 0.3s;
-  
 }
 
-.navbar_pc ul li a{
+.navbar_pc ul li a {
   padding: 10px;
   margin: 10px;
   text-decoration: none;
   color: white;
+  transition: all 100ms;
 }
-.navbar_pc ul li a:hover{
-  
+.navbar_pc ul li a:hover {
   cursor: pointer;
-  border-radius: 1rem;
- box-shadow: 0px 0px 5px greenyellow;
-
+  color: greenyellow;
+  border-bottom: 2px solid whitesmoke;
+  /* border-radius: 1rem; */
+  /* box-shadow: 0px 0px 5px greenyellow; */
 }
 .navbar_sm {
   display: none;
@@ -42,15 +40,15 @@
 .navbar_sm_menu {
   display: none;
 }
-.logo{
-  background-color:transparent;
+.logo {
+  background-color: transparent;
   border-radius: 0.5rem;
   margin-left: 2rem;
   color: white;
   padding: 0.3rem;
   box-shadow: 0 0 5px gainsboro;
 }
-.logo h3 a{
+.logo h3 a {
   color: white;
   text-decoration: none;
 }
@@ -59,7 +57,7 @@
     display: none;
   }
 
-  .navbar_sm{
+  .navbar_sm {
     display: block;
     margin-right: 2rem;
   }
@@ -82,20 +80,18 @@
     align-items: center;
     width: 100%;
     background-color: aliceblue;
-    
   }
-  
+
   .navbar_sm_menu a {
     padding: 1rem 0;
     text-decoration: none;
   }
-  
+
   .nav-show {
     transform: translateX(0);
   }
-  
+
   .nav-hide {
     transform: translateX(100%);
   }
-  
 }
