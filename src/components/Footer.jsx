@@ -30,7 +30,7 @@ function Footer() {
           </li>
           <li>
             <MdAlternateEmail />
-            <a href="mailto:bhskr.wb@gmail.com">bhskr.wb@gmail.com</a>
+            <a href="mailto:i.bhskry@gmail.com">bhskr.wb@gmail.com</a>
            
           </li>
         </ul>
@@ -56,6 +56,7 @@ function Footer() {
           <li><IoCodeSlashOutline/>Project</li>
         </ul>
       </div>
+   
     </div>
   );
 }

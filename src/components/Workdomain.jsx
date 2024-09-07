@@ -21,7 +21,7 @@ import tailwind from "../assets/tailwind-css.svg";
 import java from "../assets/java.svg";
 function Workdomain() {
   return (
-    <div className="Workdomain content-padding">
+    <div className="workdomain content-padding">
       <div className="title-text">
         <p>Work Domain</p>
         <img src={underlineImage} alt="underline" />
