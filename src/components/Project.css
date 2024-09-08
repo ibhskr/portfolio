@@ -7,20 +7,28 @@
   max-width: 350px;
   margin: 2.5rem;
   height: fit-content;
+  transition: all ease 0.3s;
+}
+.project-item:hover {
+  border: 1px solid whitesmoke;
+  box-shadow: rgba(0, 255, 21, 0.4) 5px 5px, rgba(56, 240, 46, 0.3) 10px 10px,
+    rgba(46, 240, 111, 0.2) 15px 15px, rgba(59, 240, 46, 0.1) 20px 20px,
+    rgba(46, 240, 46, 0.05) 25px 25px;
+
+  transform: scale(1.01);
 }
 
-.project-item h3{
+.project-item h3 {
   padding: 0 2rem;
   text-decoration: underline 2px solid orangered;
 }
-
 
 .project-item img {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 2rem;
 }
-.project-item p{
+.project-item p {
   padding: 0 2rem;
   height: 150px;
   overflow-y: auto;
@@ -36,14 +44,24 @@
   justify-content: center;
   align-items: center;
   font-size: 15px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.project-item button:hover {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  background-color: rgba(0, 255, 21, 0.4);
 }
 
-
-.project{
+.project {
   display: grid;
-  grid-template-columns: repeat(auto-fit,400px);
+  grid-template-columns: repeat(auto-fit, 400px);
   justify-content: center;
 }
-.title-text{
+.title-text {
   text-align: center;
+}
+.highlight {
+  background-color: rgba(255, 255, 0, 0.322);
+  /* color: black; */
 }
