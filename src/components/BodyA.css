@@ -1,23 +1,13 @@
 .bodyA {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   background: linear-gradient(
     180deg,
     rgba(2, 0, 36, 0) 0%,
     rgba(9, 9, 121, 0) 0%,
     rgba(0, 212, 255, 0.6587885154061625) 100%
   );
-
-  /* bg parttern */
-  /* background-color: #e5e5f7; */
-  /* opacity: 0.8;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #e5e5f7 50px
-    ),
-    repeating-linear-gradient(#444cf755, #444cf7);*/
 
   background-image: repeating-radial-gradient(
       circle at 0 0,
@@ -27,68 +17,48 @@
     repeating-linear-gradient(transparent, transparent);
 }
 
-.bodyA-text {
-  font-size: 1rem;
-}
+@media screen and (min-width: 601px) {
+  .bodyA {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bodyA-text {
+    font-size: 1rem;
+    justify-self: center;
+    align-self: center;
+  }
 
-@keyframes cursor {
-  /* to{
-    border-left: 2px solid black;
-  } */
-  50% {
-    border-color: transparent;
+  .profile_pic {
+    justify-self: center;
+    /* width: 40%; */
+    display: flex;
+    justify-content: center;
+  }
+  .profile_pic img {
+    width: 70%;
   }
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes words {
-  0%,
-  33% {
-    content: "Bhaskar Roy";
-  }
-  34%,
-  67% {
-    content: "a Full Stack Web Developer";
-  }
-  68%,
-  100% {
-    content: "a Tech Enthusiast";
-  }
-}
-
-.profile_pic {
-  width: 40%;
-  display: flex;
-  justify-content: end;
-}
-.profile_pic img {
-  width: 80%;
-}
-
 /* media query for small screen */
 @media screen and (max-width: 600px) {
   .bodyA {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+
+    grid-template-rows: repeat(2, 1fr);
+    /* align-items: flex-start; */
   }
+  .bodyA-text {
+    font-size: 0.8rem;
+    justify-self: left;
+    align-self:center;
+  }
+
   .profile_pic {
-    width: 100%;
-    padding-top: 50px;
+    /* justify-self: center; */
+    /* width: 40%; */
+    display: flex;
+    justify-content: end;
   }
   .profile_pic img {
     width: 50%;
-    float: right;
-  }
-  .bodyA-text {
-    position: relative;
-    top: 8rem;
-    /* margin-top: 100px; */
   }
 }

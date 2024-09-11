@@ -1,11 +1,19 @@
 import React from "react";
 import "./Education.css";
 import underlineImage from "../assets/yellow-vector.svg";
+import StaggerText from "react-stagger-text";
 function Education() {
   return (
     <div className="education content-padding">
       <div className="title-text">
-        <p>Education</p>
+        <StaggerText
+          staggerType="letter"
+          staggerDuration={1}
+            startDelay={0.06}
+          // startDelay={500}
+        >
+          Education
+        </StaggerText>
         <img src={underlineImage} alt="" srcset="" />
       </div>
       <div className="educationsection ">

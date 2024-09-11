@@ -1,5 +1,6 @@
 import React from "react";
 import "./Workdomain.css";
+import StaggerText from "react-stagger-text";
 import underlineImage from "../assets/yellow-vector.svg";
 import frontendImg from "../assets/frontend.png";
 import backendImg from "../assets/backend.png";
@@ -9,7 +10,6 @@ import toolsImg from "../assets/tools.png";
 import background1 from "../assets/background-1.png";
 import htmlImg from "../assets/html.svg";
 import cssImg from "../assets/css.svg";
-
 import javascript from "../assets/javascript.svg";
 import react from "../assets/react.svg";
 import nodejs from "../assets/nodejs.svg";
@@ -23,7 +23,16 @@ function Workdomain() {
   return (
     <div className="workdomain content-padding">
       <div className="title-text">
-        <p>Work Domain</p>
+        <p>
+          <StaggerText
+            staggerType="letter"
+            staggerDuration={1}
+            startDelay={0.06}
+            // startDelay={500}
+          >
+            Skill Set
+          </StaggerText>
+        </p>
         <img src={underlineImage} alt="underline" />
       </div>
       <div className="workdomain-main">
