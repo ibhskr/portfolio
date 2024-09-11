@@ -6,7 +6,7 @@ function BodyA() {
   return (
     <div className="bodyA content-padding">
       <div className="bodyA-text">
-        <TypeAnimation
+        <TypeAnimation 
           sequence={[
             "Hey there, glad you're here!",
             1000,
