@@ -2,6 +2,7 @@
   /* display: flex;
   justify-content: space-around;
   align-items: center; */
+  margin-top: 50px;
   background: linear-gradient(
     180deg,
     rgba(2, 0, 36, 0) 0%,
@@ -24,7 +25,7 @@
   }
   .bodyA-text {
     font-size: 1rem;
-    justify-self: center;
+    justify-self: left;
     align-self: center;
   }
 
@@ -50,6 +51,7 @@
     font-size: 0.8rem;
     justify-self: left;
     align-self:center;
+    height: 100px;
   }
 
   .profile_pic {
