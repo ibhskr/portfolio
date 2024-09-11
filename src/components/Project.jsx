@@ -2,12 +2,22 @@ import React from "react";
 import xClone from "../assets/xClone.png";
 import findMyHotel from "../assets/findMyHotel.png";
 import underlineImage from "../assets/yellow-vector.svg";
+import StaggerText from "react-stagger-text";
 import "./Project.css";
 function Project() {
   return (
     <div className="project-section">
       <div className="title-text">
-        <p>Project</p>
+        <p>
+          <StaggerText
+            staggerType="letter"
+            staggerDuration={1}
+            startDelay={0.06}
+            // startDelay={500}
+          >
+            Project
+          </StaggerText>
+        </p>
         <img src={underlineImage} alt="" srcset="" />
       </div>
       <div className="project">
