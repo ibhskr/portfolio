@@ -14,8 +14,11 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="logo">
-          <h3><NavLink to="/">Bhaskar Roy</NavLink></h3>
+          <h3>
+            <NavLink to="/">Bhaskar Roy</NavLink>
+          </h3>
         </div>
+        {/* For larger screens */}
         <div className="navbar_pc">
           <ul>
             <li>
@@ -27,7 +30,6 @@ function Navbar() {
             <li>
               <NavLink to="/blog">Blog</NavLink>
             </li>
-
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
@@ -36,21 +38,34 @@ function Navbar() {
             </li>
           </ul>
         </div>
+        {/* For smaller screens */}
         <div onClick={toggle} className="navbar_sm">
           {isNavbarOpen ? <BsXLg /> : <BsJustify />}
         </div>
       </div>
+
+      {/* Mobile menu */}
       <div
         className={
           isNavbarOpen ? "nav-show navbar_sm_menu" : "nav-hide navbar_sm_menu"
         }
       >
         <nav>
-          <NavLink to="/" onClick={toggle}>Home</NavLink>
-          <NavLink to="/project" onClick={toggle}>Project</NavLink>
-          <NavLink to="/blog" onClick={toggle}>Blog</NavLink>
-          <NavLink to="/about" onClick={toggle}>About</NavLink>
-          <NavLink to="/contact" onClick={toggle}>Contact me</NavLink>
+          <a href="#home-id" onClick={toggle}>
+            Home
+          </a>
+          <a href="#project-id" onClick={toggle}>
+            Project
+          </a>
+          <a href="#blog-id" onClick={toggle}>
+            Blog
+          </a>
+          <a href="#about-id" onClick={toggle}>
+            About
+          </a>
+          <a href="#contact-id" onClick={toggle}>
+            Contact me
+          </a>
         </nav>
       </div>
     </>

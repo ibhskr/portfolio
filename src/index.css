@@ -6,6 +6,10 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* padding for large screen*/
   --pd-lg-sc: 10%;
