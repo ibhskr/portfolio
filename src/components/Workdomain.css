@@ -53,6 +53,10 @@
   /* margin-left: 2rem; */
   padding: 1rem 0;
 }
+.workdomain-item ul li {
+  color: #0d132a;
+}
+
 .workdomain-item p {
   padding: 1rem;
   color: white;
