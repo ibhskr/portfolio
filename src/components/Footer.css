@@ -7,14 +7,12 @@
   flex-wrap: wrap;
   bottom: 0;
 }
-.footer-item{
-    width: max-content;
-    /* padding: 5%; */
-    padding: 0 1rem 3rem 0;
-    
+.footer-item {
+  width: max-content;
+  /* padding: 5%; */
+  padding: 0 1rem 3rem 0;
 }
 .footer h3 {
-  
   border-bottom: 5px solid orangered;
 }
 .footer li {
@@ -24,14 +22,19 @@
 
   padding: 0.2rem;
 }
-.footer a{
+.footer a {
   margin-left: 1rem;
   color: white;
   text-decoration: none;
 }
-.footer a:hover{
+.footer a:hover {
   color: yellow;
 }
 .footer li p {
   margin-left: 1rem;
+}
+@media (max-width: 768px) {
+  .footer {
+    font-size: small;
+  }
 }

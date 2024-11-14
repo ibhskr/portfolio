@@ -9,7 +9,7 @@
   font-family: "Arial", sans-serif;
 }
 
-h1 {
+.contact-container h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -32,57 +32,26 @@ ul {
   color: #d9d9d9;
 }
 
-ul {
+.contact-container ul {
   list-style-type: none;
   padding: 0;
 }
 
-ul li {
+.contact-container ul li {
   margin-bottom: 10px;
 }
 
-a {
+.contact-container a {
   color: #007bff;
   text-decoration: none;
 }
 
-a:hover {
+.contact-container a:hover {
   text-decoration: underline;
   color: #ffcc00;
 }
 
-.contact-form {
-  margin-top: 40px;
-}
-
-.contact-form h2 {
-  font-size: 1.8rem;
-  color: #ffcc00;
-  margin-bottom: 15px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-}
-
-input,
-textarea {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #555;
-  border-radius: 5px;
-  background-color: #333;
-  color: #f0f0f0;
-  font-size: 1rem;
-}
-
-button {
+.contact-container button {
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -92,7 +61,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.contact-container button:hover {
   background-color: #ffb700;
 }
 
@@ -101,22 +70,12 @@ button:hover {
     padding: 20px;
   }
 
-  h1 {
+  .contact-container h1 {
     font-size: 2rem;
   }
 
   .contact-details h2,
   .contact-form h2 {
     font-size: 1.5rem;
-  }
-
-  label,
-  input,
-  textarea {
-    font-size: 1rem;
-  }
-
-  button {
-    font-size: 1rem;
   }
 }

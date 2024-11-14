@@ -16,42 +16,42 @@
   border-bottom: 1px solid #333; /* Subtle divider between sections */
 }
 
-h1 {
+.about-container h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
   color: #ffcc00; /* Highlighted heading color */
 }
 
-h2 {
+.about-container h2 {
   font-size: 1.8rem;
   color: #ffcc00; /* Same highlight for subheadings */
   margin-bottom: 15px;
 }
 
-p {
+.about-container p {
   font-size: 1.1rem;
   line-height: 1.7; /* Better readability */
   color: #d9d9d9;
 }
 
-ul {
+.about-container ul {
   list-style-type: disc;
   margin-left: 20px;
   color: #d9d9d9;
 }
 
-ul li {
+.about-container ul li {
   margin-bottom: 10px;
 }
 
-a {
+.about-container a {
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
+.about-container a:hover {
   text-decoration: underline;
   color: #ffcc00; /* Change hover color for better interaction feedback */
 }
@@ -61,16 +61,16 @@ a:hover {
     padding: 20px;
   }
 
-  h1 {
+  .about-container h1 {
     font-size: 2rem;
   }
 
-  h2 {
+  .about-container h2 {
     font-size: 1.5rem;
   }
 
-  p,
-  ul {
+  .about-container p,
+  .about-container ul {
     font-size: 1rem;
   }
 }
