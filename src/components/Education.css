@@ -1,98 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Handlee&family=Lilita+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Sriracha&display=swap");
+
+.education {
+  opacity: 1;
+  background-image: radial-gradient(white 0.05px, transparent 0.65px);
+  background-size: 50px 50px;
+
+  font-optical-sizing: auto;
+}
+
+.educationsection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Handlee", cursive;
+}
+
 .ed-item {
-  box-shadow: 0px 0px 5px gray;
+  background-color: white;
+  color: black;
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9fd;
 }
-
-.ed-item img {
-  width: 100px;
-}
-.underline {
-  text-decoration: underline 1px solid blue;
-  padding-bottom: 1rem;
-
-  /* font-weight:bolder; */
-  color: rgb(5, 5, 122);
-}
-/** media queary for small screen */
-@media screen and (max-width: 767px) {
-  .ed-item {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin: 1rem;
-  }
-
-  .ed-item img {
-    width: 80px;
-    margin-right: 20px;
-  }
-}
-
-/** media queary for big screen */
-@media screen and (min-width: 767px) {
-  .educationsection {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 30rem;
-    /* background-color: antiquewhite; */
-  }
-  .ed-item {
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    margin: 1rem 1rem 0 1rem;
-    padding: 0 2rem;
-    border-radius: 1.5rem 1.5rem 0 0;
-  }
-  .ed-item-1 {
-    background-image: url("../assets/scl-img.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-  }
-  .ed-item-2 {
-    background-image: url("../assets/clg1-img.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-  }
-  .ed-item-3 {
-    background-image: url("../assets/clg2-img.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-  }
-  .ed-text {
-    width: 100%;
-    /* background: black; */
-    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
-    border-radius: 1rem 1rem 0 0; /* Optional: rounded corners */
-    padding: 5px; /* Optional: spacing inside */
-    backdrop-filter: blur(2px); /* Apply blur effect to background */
-    -webkit-backdrop-filter: blur(8px); /* For Safari compatibility */
-  }
-  .ed-text h3 {
-    color: indigo;
-  }
-  .ed-text p {
-    color: #333; /* Ensure text is readable */
-  }
-
-  .ed-item img {
-    margin: 1.5rem 0;
-    display: none;
-  }
-  .ed-item-1 {
-    height: 50%;
-  }
-  .ed-item-2 {
-    height: 75%;
-  }
-  .ed-item-3 {
-    height: 100%;
-  }
+.ed-tag {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid blue;
+  width: fit-content;
+  margin-bottom: 10px;
 }

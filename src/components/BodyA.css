@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lilita+One&family=Shadows+Into+Light&display=swap");
 .bodyA {
   /* display: flex;
   justify-content: space-around;
@@ -16,6 +17,10 @@
       rgba(255, 255, 255, 0.2) 70px
     ),
     repeating-linear-gradient(transparent, transparent);
+}
+.bodyA-text {
+  /* font-family: "Shadows Into Light", cursive; */
+  font-family: "Caveat Brush", cursive;
 }
 
 @media screen and (min-width: 601px) {
@@ -42,16 +47,12 @@
 /* media query for small screen */
 @media screen and (max-width: 600px) {
   .bodyA {
-    display: grid;
-
-    grid-template-rows: repeat(2, 1fr);
-    /* align-items: flex-start; */
+    display: flex;
+    flex-direction: column;
   }
   .bodyA-text {
-    font-size: 0.8rem;
-    justify-self: left;
-    align-self:center;
     height: 100px;
+    padding: 20px;
   }
 
   .profile_pic {
