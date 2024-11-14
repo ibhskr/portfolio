@@ -51,21 +51,21 @@ function Navbar() {
         }
       >
         <nav>
-          <a href="#home-id" onClick={toggle}>
+          <NavLink to="/" onClick={toggle}>
             Home
-          </a>
-          <a href="#project-id" onClick={toggle}>
+          </NavLink>
+          <NavLink to="/project" onClick={toggle}>
             Project
-          </a>
-          <a href="#blog-id" onClick={toggle}>
+          </NavLink>
+          <NavLink to="/blog" onClick={toggle}>
             Blog
-          </a>
-          <a href="#about-id" onClick={toggle}>
+          </NavLink>
+          <NavLink to="/about" onClick={toggle}>
             About
-          </a>
-          <a href="#contact-id" onClick={toggle}>
-            Contact me
-          </a>
+          </NavLink>
+          <NavLink to="/contact" onClick={toggle}>
+            Contact Me
+          </NavLink>
         </nav>
       </div>
     </>
